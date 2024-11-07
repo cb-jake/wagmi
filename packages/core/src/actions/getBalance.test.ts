@@ -21,13 +21,13 @@ beforeEach(async () => {
 
 test('default', async () => {
   await expect(getBalance(config, { address })).resolves.toMatchInlineSnapshot(`
-      {
-        "decimals": 18,
-        "formatted": "10000",
-        "symbol": "ETH",
-        "value": 10000000000000000000000n,
-      }
-    `)
+    {
+      "decimals": 18,
+      "formatted": "9999.997934385343786198",
+      "symbol": "ETH",
+      "value": 9999997934385343786198n,
+    }
+  `)
 
   await testClient.mainnet.setBalance({
     address,
